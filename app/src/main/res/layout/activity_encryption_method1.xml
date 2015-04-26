@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.pro.encryptor.encryption.EncryptionMethod1"
+    android:id="@+id/layout">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text to Binary"
+        android:id="@+id/button"
+        android:layout_marginTop="37dp"
+        android:onClick="textToBinary"
+        android:layout_below="@+id/txtInput"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInput"
+        android:minWidth="200dp"
+        android:text="Type Here"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Binary Version"
+        android:id="@+id/txtBinary"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt Binary"
+        android:id="@+id/btnencrypt"
+        android:layout_below="@+id/txtBinary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:onClick="algorithm1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encryted Binary"
+        android:id="@+id/txtEncryptedBinary"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/btnencrypt"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
