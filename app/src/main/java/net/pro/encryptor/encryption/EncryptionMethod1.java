@@ -63,31 +63,32 @@ public class EncryptionMethod1 extends ActionBarActivity {
         TextView encryptedBinary = (TextView) this.findViewById(R.id.txtEncryptedBinary);
         encryptedBinary.setText(binaryOut.toString());
     }
-    //  public void decryption1(View view) {
 
 
-    //    TextView BinaryText = (TextView) this.findViewById(R.id.txtBinary);
-    //    binaryIn = BinaryText.getText().toString();
+    public void decryption1(View view) {
 
-    //    StringBuilder binaryOut = new StringBuilder();
-    //    for (char bit : binaryIn.toCharArray()) {
-    //        System.out.println(bit);
-    //        if (bit == ' ') {
-    //            binaryOut.append(' ');
-    //            continue;
-     //       }
-     //       String d = String.valueOf(bit);
-    //        int b = (Integer.valueOf(d) - 15)/2;
+        TextView txtEncryptedBinary = (TextView) this.findViewById(R.id.txtEncryptedBinary);
+        String encryptedtxt = txtEncryptedBinary.getText().toString();
 
+        StringBuilder decryptedBinary = new StringBuilder();
+    //   for (char bit : encryptedtxt.toCharArray()) {
+            for (int pointer = 0; pointer < encryptedtxt.length()-1; pointer = pointer +2) {
+                String num = encryptedtxt.substring(pointer,pointer+2);
+                if (num.substring(0,1).equals(" ")) {
+                            decryptedBinary.append(' ');
+                            pointer = pointer - 1;
+                            continue;
+                   }
+                System.out.println(num);
+                int b = (Integer.valueOf(num) / 2) - 15;
 
-     //       System.out.println("After Decryption" + b);
+                System.out.println("After Decryption" + b);
+                decryptedBinary.append(b);
+        }
 
-      //      binaryOut.append(b);
-
-     //   TextView encryptedBinary = (TextView) this.findViewById(R.id.txtEncryptedBinary);
-      //  encryptedBinary.setText(binaryOut.toString());
-
-//    }
+        TextView txtDecrypt = (TextView) this.findViewById(R.id.txtDecrypt);
+        txtDecrypt.setText(decryptedBinary.toString());
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -25,7 +25,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Encryption Style 1"
+        android:text="Encryption Method 1"
         android:id="@+id/btnLaunchES1"
         android:layout_below="@+id/editText"
         android:layout_centerHorizontal="true"
@@ -42,7 +42,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Encryption Style 2"
+        android:text="Encryption Method 2"
         android:id="@+id/button3"
         android:layout_above="@+id/button2"
         android:layout_centerHorizontal="true"
