@@ -53,19 +53,42 @@ public class EncryptionMethod1 extends ActionBarActivity {
                 continue;
             }
             String d = String.valueOf(bit);
-            int b = (Integer.valueOf(d) + 15)*2;
+            int b = (Integer.valueOf(d) + 15) * 2;
 
 
             System.out.println("After Modification" + b);
 
             binaryOut.append(b);
-
         }
-
         TextView encryptedBinary = (TextView) this.findViewById(R.id.txtEncryptedBinary);
         encryptedBinary.setText(binaryOut.toString());
-
     }
+    //  public void decryption1(View view) {
+
+
+    //    TextView BinaryText = (TextView) this.findViewById(R.id.txtBinary);
+    //    binaryIn = BinaryText.getText().toString();
+
+    //    StringBuilder binaryOut = new StringBuilder();
+    //    for (char bit : binaryIn.toCharArray()) {
+    //        System.out.println(bit);
+    //        if (bit == ' ') {
+    //            binaryOut.append(' ');
+    //            continue;
+     //       }
+     //       String d = String.valueOf(bit);
+    //        int b = (Integer.valueOf(d) - 15)/2;
+
+
+     //       System.out.println("After Decryption" + b);
+
+      //      binaryOut.append(b);
+
+     //   TextView encryptedBinary = (TextView) this.findViewById(R.id.txtEncryptedBinary);
+      //  encryptedBinary.setText(binaryOut.toString());
+
+//    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
