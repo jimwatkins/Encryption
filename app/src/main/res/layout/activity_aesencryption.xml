@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.pro.encryptor.encryption.AESEncryption">
+
+    <TextView android:text="AES Encryption" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AESEncryptedText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextAESInput"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/AESEncryptedText"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AES Encrypt"
+        android:id="@+id/button4"
+        android:layout_below="@+id/TextAESInput"
+        android:layout_centerHorizontal="true"
+        android:onClick="EncryptwAES" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAESEncrypted"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/TextAESInput" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AES Decrypt"
+        android:id="@+id/button5"
+        android:layout_below="@+id/txtAESEncrypted"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/txtAESEncrypted"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

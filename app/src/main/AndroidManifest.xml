@@ -24,6 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="net.pro.encryptor.encryption.EncryptionActivity" />
         </activity>
+        <activity
+            android:name=".AESEncryption"
+            android:label="@string/title_activity_aesencryption"
+            android:parentActivityName=".EncryptionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.pro.encryptor.encryption.EncryptionActivity" />
+        </activity>
     </application>
 
 </manifest>

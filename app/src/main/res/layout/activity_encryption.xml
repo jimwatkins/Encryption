@@ -36,16 +36,17 @@
         android:layout_height="wrap_content"
         android:text="Make Your Own!"
         android:id="@+id/button2"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Encryption Method 2"
+        android:text="AES encryption"
         android:id="@+id/button3"
-        android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="41dp" />
+        android:layout_below="@+id/btnLaunchES1"
+        android:layout_alignStart="@+id/button2"
+        android:nestedScrollingEnabled="false"
+        android:onClick="launchMethod2" />
 
 </RelativeLayout>
