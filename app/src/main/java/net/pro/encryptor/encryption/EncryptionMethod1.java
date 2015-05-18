@@ -18,7 +18,7 @@ public class EncryptionMethod1 extends ActionBarActivity {
 
 
     public void textToBinary (View v) {
-        TextView input = (TextView) this.findViewById(R.id.txtInput);
+        TextView input = (TextView) this.findViewById(R.id.txtOption3Input);
         String s = input.getText().toString();
         byte[] bytes = s.getBytes();
         StringBuilder binary = new StringBuilder();

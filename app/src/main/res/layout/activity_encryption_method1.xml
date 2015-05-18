@@ -13,13 +13,13 @@
         android:text="Text to Binary"
         android:id="@+id/button"
         android:onClick="textToBinary"
-        android:layout_below="@+id/txtInput"
+        android:layout_below="@+id/txtOption3Input"
         android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtInput"
+        android:id="@+id/txtOption3Input"
         android:minWidth="200dp"
         android:text="Type Here"
         android:gravity="center_horizontal"
