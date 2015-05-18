@@ -32,6 +32,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="net.pro.encryptor.encryption.EncryptionActivity" />
         </activity>
+        <activity
+            android:name=".ThirdOption"
+            android:label="@string/title_activity_third_option" >
+        </activity>
     </application>
 
 </manifest>
