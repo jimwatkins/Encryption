@@ -13,7 +13,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/TextAESInput"
+        android:id="@+id/txtAESInput"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/AESEncryptedText"
         android:layout_alignParentStart="true" />
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="AES Encrypt"
         android:id="@+id/button4"
-        android:layout_below="@+id/TextAESInput"
+        android:layout_below="@+id/txtAESInput"
         android:layout_centerHorizontal="true"
         android:onClick="EncryptwAES" />
 
@@ -33,7 +33,7 @@
         android:id="@+id/txtAESEncrypted"
         android:layout_below="@+id/button4"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/TextAESInput" />
+        android:layout_alignEnd="@+id/txtAESInput" />
 
     <Button
         android:layout_width="wrap_content"
@@ -41,12 +41,13 @@
         android:text="AES Decrypt"
         android:id="@+id/button5"
         android:layout_below="@+id/txtAESEncrypted"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="DecryptAES" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText4"
+        android:id="@+id/decryptedTxt"
         android:layout_centerVertical="true"
         android:layout_alignEnd="@+id/txtAESEncrypted"
         android:layout_alignParentStart="true" />

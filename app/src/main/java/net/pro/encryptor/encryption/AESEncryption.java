@@ -45,14 +45,14 @@ public class AESEncryption extends ActionBarActivity {
         String password = "password";
         String message = "hello world";
 
-        TextView input = (TextView) this.findViewById(R.id.AESEncryptedText);
+        TextView input = (TextView) this.findViewById(R.id.txtAESInput);
         String s = input.getText().toString();
-
+        message = s;
         String encryptedMsg = "";
 
         try {
             encryptedMsg = AESEncryptor.encrypt(password, message);
-        }catch (GeneralSecurityException e){
+        } catch (GeneralSecurityException e){
             //handle error
         }
 
@@ -60,5 +60,20 @@ public class AESEncryption extends ActionBarActivity {
         BinaryText.setText(encryptedMsg);
 
     }
+
+    public void DecryptAES(View v) {
+        TextView BinaryText = (TextView) this.findViewById(R.id.txtAESEncrypted);
+        String encryptedMsg = BinaryText.getText().toString();
+        String decryptedMsg = "";
+        try {
+            decryptedMsg = AESEncryptor.decrypt("password", encryptedMsg);
+        } catch (GeneralSecurityException e){
+            //handle error
+        }
+        TextView decryptedTxt = (TextView) this.findViewById(R.id.decryptedTxt);
+        decryptedTxt.setText(decryptedMsg);
+    }
+
 }
+
 
