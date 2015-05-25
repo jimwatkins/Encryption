@@ -11,44 +11,34 @@
         android:layout_alignParentStart="true"
         android:id="@+id/textView" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:text="Menu
-        "
-        android:textColor="@color/abc_background_cache_hint_selector_material_dark" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Encryption Method 1"
         android:id="@+id/btnLaunchES1"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true"
-        android:onClick="launchGame" />
+        android:onClick="launchGame"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Make Your Own!"
+        android:text="AES Your Key"
         android:id="@+id/button2"
+        android:onClick="launchThirdOption"
+        android:layout_marginTop="62dp"
         android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:onClick="launchThirdOption" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="AES encryption"
         android:id="@+id/button3"
-        android:layout_below="@+id/btnLaunchES1"
-        android:layout_alignStart="@+id/button2"
         android:nestedScrollingEnabled="false"
-        android:onClick="launchMethod2" />
+        android:onClick="launchMethod2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
